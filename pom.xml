@@ -12,9 +12,8 @@
 
     <!-- 로컬에서는 테스트 문제로 6.2.2를 사용하자 -->
     <properties>
-        <elasticsearch.version>6.4.3</elasticsearch.version>
+        <elasticsearch.version>7.13.3</elasticsearch.version>
         <!-- 		<elasticsearch.version>6.2.2</elasticsearch.version> -->
-        <lucene.version>7.2.1</lucene.version>
     </properties>
 
 
@@ -26,20 +25,6 @@
             <version>${elasticsearch.version}</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>org.apache.solr</groupId>
-            <artifactId>solr-core</artifactId>
-            <version>${lucene.version}</version>
-            <type>jar</type>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.lucene</groupId>
-            <artifactId>lucene-core</artifactId>
-            <version>${lucene.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
